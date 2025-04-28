@@ -1,0 +1,10 @@
+aiohttp
+httpx
+tqdm
+google-auth
+google-api-python-client
+aiofiles
+vdf
+gspread
+logzero
+ujson

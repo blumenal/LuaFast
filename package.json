@@ -1,0 +1,22 @@
+{
+  "name": "LuaFast",
+  "version": "3.0.4",
+  "description": "LuaFast gerenciador de depots da Steam",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Erro: nenhum teste especificado\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blumenal/LuaFast.git"
+  },
+  "keywords": [
+    "LuaFast"
+  ],
+  "author": "blumenal",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/blumenal/LuaFast/issues"
+  },
+  "homepage": "https://github.com/blumenal/LuaFast#readme"
+}
