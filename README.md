@@ -42,7 +42,7 @@ Este projeto é completamente gratuito e disponibilizado de forma aberta no GitH
 O projeto **não garante conformidade com legislações locais**, sendo proibido o seu uso em desacordo com as leis e regulamentos vigentes em cada país ou região. O usuário assume plena responsabilidade por qualquer ato ilícito decorrente do uso do programa, consciente ou inconscientemente.
 
 Além disso, **é proibido utilizar este projeto para fins comerciais**.  
-Modificações no projeto só serão permitidas mediante a publicação conjunta do código-fonte correspondente.
+**Modificações no projeto só serão permitidas mediante a publicação conjunta do código-fonte correspondente. e insformado os devidos creditos, caso não seja cumprido sera empretado ação judicial e notificação ao Github.**
 
 **Ao utilizar este programa, você declara estar de acordo com todos os termos acima.**
 
