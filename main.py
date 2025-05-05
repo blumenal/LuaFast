@@ -34,26 +34,10 @@ def verificar_acordo():
     except:
         return None  # Erro na leitura, exibe tela de termos novamente
 
+# No seu main.py, modifique a função salvar_acordo:
 def salvar_acordo(aceito: bool):
     with open(CAMINHO_LOG, "w") as f:
         json.dump({"acordo_aceito": aceito}, f)
-
-    if aceito:
-        try:
-            caminho_steam = r"C:\Program Files (x86)\Steam"
-
-            # Corrigir caminho se estiver empacotado
-            if hasattr(sys, '_MEIPASS'):
-                dll_origem = os.path.join(sys._MEIPASS, 'hid.dll')
-            else:
-                dll_origem = "hid.dll"
-
-            dll_destino = os.path.join(caminho_steam, "hid.dll")
-
-            if os.path.exists(dll_origem):
-                shutil.copy2(dll_origem, dll_destino)
-        except:
-            pass  # Silenciosamente ignora qualquer erro
 
 def tela_inicial():
     limpar_tela()
@@ -97,7 +81,7 @@ def exibir_banner():
                   \_| |_/       |_|                                 
     """
     print(VERDE + banner + RESET)
-    print(f"{VERDE} Ver: 3.6 |Desenvolvedores: blumenal86 | Colaborador: Jeffersonsud{RESET}")
+    print(f"{VERDE} Ver: 3.7.3 |Desenvolvedores: blumenal86 | Colaborador: Jeffersonsud{RESET}")
     print("\n Use o site " + AZUL + "https://steamdb.info/" + RESET + " para obter o ID do game desejado.\n")
 
 def exibir_menu():
