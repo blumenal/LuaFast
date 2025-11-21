@@ -1,5 +1,7 @@
 # LuaFast
 
+Obs. Para que o LuaFast funcione perfeitamente ele precisa do Git instalado em seu pc. segue o link: https://git-scm.com/install/
+
 O LuaFast acabou ! Estou de saco cheio! Mas está aí a última versão.
 Essa versão contem a dll estável.
 Se você usa o Steam Tools vá até a pasta da Steam, e apague a hid.dll e quando você abrir o LuaFast ele irá recriar a dll.
