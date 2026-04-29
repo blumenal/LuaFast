@@ -37,7 +37,7 @@ Sobre a instalacao do git, apenas va apertando no next ate o fim sem precisar co
 
 ### Recursos Principais
 
-Desbloqueie um número ilimitado de jogos que você não possui utilizando arquivos .lua e .manifast.
+Possibilita adicionar uma quantidade gigantesca de jogos que você não possui utilizando arquivos .lua e .manifast.
 
 Desbloqueie todos os DLCs de jogos que você não possui.
 
