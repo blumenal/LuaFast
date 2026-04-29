@@ -1,41 +1,41 @@
-### Funcionalidade do LuaFast
+## Funcionalidade do LuaFast
 
-## Instalação de jogos
+### Instalação de jogos
 Permite pesquisar por appId ou partes do nome dos jogos, faz o download de forma automática dos arquivos .lua e .manifest .
 
-## Instalar DLS´s
+### Instalar DLS´s
 Permite selecionar jogos que foram adicionados e instalar as DLC´s disponíveis para o jogo selecionado.
 
-## Atualizar Keys Instaladas
+### Atualizar Keys Instaladas
 Permite fazer uma busca online por novas versões de arquivos .manifest e quando os encontra faz o download e atualiza o arquivo .lua .
 
-## Remover Jogos
+### Remover Jogos
 Permite selecionar jogos instalados e removelos da conta Steam.
 
-## Backup de Key
+### Backup de Key
 Permite fazer o Backup e Restauração de arquivos .lua e .manifest .
 
-## Save Games 
+### Save Games 
 Permite fazer o Backup dos saves (funcionalidade ainda em implementação, pode conter erros).
 
-## Reiniciar Steam 
+### Reiniciar Steam 
 Sempre que for inserido algo novo, este botão fecha a Steam e Abre novamente.
 
-## Configurções
+### Configurções
 Aqui é possíve definir o local da pasta Steam e também mudar o tema do LuaFast.
 
-## Token Hucap
+### Token Hucap
 Aqui é possível adicionar o token do https://hubcapmanifest.com
 Os tokens são utilizados para liberar o download dos arquivos quando utilizando o metodo 2.
 
-### Observação
+## Observação
 Obs. Para o LuaFast funcionar perfeitamente ele precisa do Git instalado em seu pc. segue o link: https://git-scm.com/install/
 Sobre a instalacao do git, apenas va apertando no next ate o fim sem precisar configurar nada.
 
 
-### Funcionalidade das DLLs
+## Funcionalidade das DLLs
 
-## Recursos Principais
+### Recursos Principais
 
 Desbloqueie um número ilimitado de jogos que você não possui utilizando arquivos .lua e .manifast.
 
@@ -47,12 +47,12 @@ Não faz nenhum tipo de conexão externa, tudo funciona localmente, único momen
 
 Suporte para download de jogos ou DLCs protegidos que exigem um token de acesso.
 
-### Compartilhamento Familiar e Remote Play
+## Compartilhamento Familiar e Remote Play
 Contorne as restrições do Compartilhamento Familiar da Steam, permitindo que jogos compartilhados sejam jogados sem limitações.
 
-### Como gerar as DLL´s
+## Como gerar as DLL´s
 
-## Requisitos
+### Requisitos
 Windows 10/11
 CMake 3.20+
 Visual Studio 2022 com MSVC (2022 17.14.31 x64)
