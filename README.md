@@ -1,3 +1,6 @@
+<img width="1813" height="1253" alt="image" src="https://github.com/user-attachments/assets/41954197-8f1c-481a-b9ed-3ed7ac6bf94a" />
+
+
 ## Funcionalidade do LuaFast
 
 ### Instalação de jogos
