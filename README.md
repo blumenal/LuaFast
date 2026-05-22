@@ -1,4 +1,5 @@
-<img width="1813" height="1253" alt="image" src="https://github.com/user-attachments/assets/41954197-8f1c-481a-b9ed-3ed7ac6bf94a" />
+
+<img width="1819" height="1255" alt="image" src="https://github.com/user-attachments/assets/b9e113c0-772e-4717-bb73-662d109f54fb" />
 
 
 ## Funcionalidade do LuaFast
@@ -32,8 +33,8 @@ Aqui é possível adicionar o token do https://hubcapmanifest.com
 Os tokens são utilizados para liberar o download dos arquivos quando utilizando o metodo 2.
 
 ## Observação
-Obs. Para o LuaFast funcionar perfeitamente ele precisa do Git instalado em seu pc. segue o link: https://git-scm.com/install/
-Sobre a instalacao do git, apenas va apertando no next ate o fim sem precisar configurar nada.
+## Obs. Para o LuaFast funcionar perfeitamente ele precisa do Git instalado em seu pc. segue o link: https://git-scm.com/install/
+## Sobre a instalacao do git, apenas va apertando no next ate o fim sem precisar configurar nada.
 
 
 ## Funcionalidade das DLLs
