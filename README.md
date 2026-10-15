@@ -23,6 +23,38 @@ Não há conexão externa durante o uso: só no momento de baixar os arquivos.
 
 ---
 
+## Como é a interface
+
+A tela inicial já abre na sua biblioteca, com a arte de cada jogo.
+
+![Tela inicial: a biblioteca](screenshots/01-biblioteca.png)
+
+Selecione um jogo e a arte dele ocupa o topo, junto do AppID e do aviso de DRM —
+assim você sabe antes de instalar se o jogo deve funcionar.
+
+![Jogo selecionado, com aviso de DRM](screenshots/02-jogo-selecionado.png)
+
+A busca usa a mesma grade: digite e a prateleira vira os resultados.
+
+![Resultados da busca](screenshots/04-busca.png)
+
+O registro completo fica numa gaveta no rodapé, para não poluir a tela.
+
+![Registro completo](screenshots/03-registro.png)
+
+<details>
+<summary><b>Outras telas</b></summary>
+
+<br>
+
+![Remover jogos](screenshots/05-remover.png)
+
+![Configurações](screenshots/06-configuracoes.png)
+
+</details>
+
+---
+
 ## Recursos
 
 ### 🎮 Instalar jogos
