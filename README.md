@@ -5,7 +5,7 @@ por meio de arquivos `.lua` e `.manifest`, no mesmo modelo do SteamTools.
 
 ![plataforma](https://img.shields.io/badge/plataforma-Windows-0078D6)
 ![licença](https://img.shields.io/badge/licen%C3%A7a-GPL--3.0-blue)
-![versão](https://img.shields.io/badge/vers%C3%A3o-28%2F08%2F2026-informational)
+![versão](https://img.shields.io/badge/vers%C3%A3o-15%2F10%2F2026-informational)
 
 ---
 
@@ -25,31 +25,41 @@ Não há conexão externa durante o uso: só no momento de baixar os arquivos.
 
 ## Como é a interface
 
-A tela inicial já abre na sua biblioteca, com a arte de cada jogo.
+A tela principal tem duas abas.
 
-![Tela inicial: a biblioteca](screenshots/01-biblioteca.png)
+**Descobrir** é a que abre. Mostra o que a loja está oferecendo — ofertas, mais
+vendidos, lançamentos e jogos em breve, tudo numa grade só, com o desconto de
+cada um.
 
-Selecione um jogo e a arte dele ocupa o topo, junto do AppID e do aviso de DRM —
-assim você sabe antes de instalar se o jogo deve funcionar.
+![Tela inicial: sugestões da loja](screenshots/01-descobrir.png)
+
+Clique numa capa e a arte do jogo ocupa o topo, junto do AppID e do aviso de
+DRM — assim você sabe antes de instalar se o jogo deve funcionar.
 
 ![Jogo selecionado, com aviso de DRM](screenshots/02-jogo-selecionado.png)
 
-A busca usa a mesma grade: digite e a prateleira vira os resultados.
+**Instalados** é a biblioteca: só os jogos que já estão na sua Steam, lidos dos
+arquivos `.lua`.
+
+![Aba Instalados: a biblioteca](screenshots/03-instalados.png)
+
+A busca na barra superior funciona nas duas abas — digite e a grade vira os
+resultados. Apagar o campo devolve a lista de onde você estava.
 
 ![Resultados da busca](screenshots/04-busca.png)
 
 O registro completo fica numa gaveta no rodapé, para não poluir a tela.
 
-![Registro completo](screenshots/03-registro.png)
+![Registro completo](screenshots/05-registro.png)
 
 <details>
 <summary><b>Outras telas</b></summary>
 
 <br>
 
-![Remover jogos](screenshots/05-remover.png)
+![Remover jogos](screenshots/06-remover.png)
 
-![Configurações](screenshots/06-configuracoes.png)
+![Configurações](screenshots/07-configuracoes.png)
 
 </details>
 
