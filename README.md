@@ -1,71 +1,161 @@
+# LuaFast
 
-<img width="1819" height="1255" alt="image" src="https://github.com/user-attachments/assets/b9e113c0-772e-4717-bb73-662d109f54fb" />
+**Gerenciador de biblioteca Steam para Windows.** Adiciona jogos à sua biblioteca
+por meio de arquivos `.lua` e `.manifest`, no mesmo modelo do SteamTools.
 
+![plataforma](https://img.shields.io/badge/plataforma-Windows-0078D6)
+![licença](https://img.shields.io/badge/licen%C3%A7a-GPL--3.0-blue)
+![versão](https://img.shields.io/badge/vers%C3%A3o-28%2F08%2F2026-informational)
 
-## Funcionalidade do LuaFast
+---
 
-### Instalação de jogos
-Permite pesquisar por appId ou partes do nome dos jogos, faz o download de forma automática dos arquivos .lua e .manifest .
+## O que ele faz
 
-### Instalar DLS´s
-Permite selecionar jogos que foram adicionados e instalar as DLC´s disponíveis para o jogo selecionado.
+O LuaFast escreve em duas pastas da sua instalação da Steam:
 
-### Atualizar Keys Instaladas
-Permite fazer uma busca online por novas versões de arquivos .manifest e quando os encontra faz o download e atualiza o arquivo .lua .
+| Pasta | O que vai para lá |
+|---|---|
+| `Steam\config\stplug-in` | arquivos `.lua` — as "keys" (`addappid`) |
+| `Steam\depotcache` | arquivos `.manifest` — depots e seus GIDs |
 
-### Remover Jogos
-Permite selecionar jogos instalados e removelos da conta Steam.
+Com isso, os jogos aparecem na sua biblioteca e podem ser baixados normalmente.
+Não há conexão externa durante o uso: só no momento de baixar os arquivos.
 
-### Backup de Key
-Permite fazer o Backup e Restauração de arquivos .lua e .manifest .
+---
 
-### Save Games 
-Permite fazer o Backup dos saves (funcionalidade ainda em implementação, pode conter erros).
+## Recursos
 
-### Reiniciar Steam 
-Sempre que for inserido algo novo, este botão fecha a Steam e Abre novamente.
+### 🎮 Instalar jogos
+Busque por nome ou AppID e o LuaFast baixa as keys e os manifests sozinho.
+Dois servidores de origem:
 
-### Configurções
-Aqui é possíve definir o local da pasta Steam e também mudar o tema do LuaFast.
+- **Método 1 — GitHub:** busca em repositórios públicos de keys.
+- **Método 2 — Hubcap API:** usa a API do [hubcapmanifest.com](https://hubcapmanifest.com)
+  e exige um token de acesso (ver [Token Hubcap](#-token-hubcap)).
 
-### Token Hucap
-Aqui é possível adicionar o token do https://hubcapmanifest.com
-Os tokens são utilizados para liberar o download dos arquivos quando utilizando o metodo 2.
+### 🧩 Instalar DLCs
+Lista as DLCs disponíveis para um jogo já adicionado e instala as que você marcar.
 
-## Observação
-## Obs. Para o LuaFast funcionar perfeitamente ele precisa do Git instalado em seu pc. segue o link: https://git-scm.com/install/
-## Sobre a instalacao do git, apenas va apertando no next ate o fim sem precisar configurar nada.
+### 🔄 Atualizar keys instaladas
+Procura online por manifests mais novos e, quando encontra, baixa e atualiza o
+`.lua` correspondente.
 
+### 🗑️ Remover jogos
+Remove da biblioteca os jogos que você selecionar — apaga o `.lua` e os
+manifests associados.
 
-## Funcionalidade das DLLs
+### 💾 Backup das keys
+Copia os `.lua` e `.manifest` para uma pasta de backup e restaura quando quiser.
 
-### Recursos Principais
+### 📁 Save Games
+Faz backup dos saves dos jogos instalados.
 
-Possibilita adicionar uma quantidade gigantesca de jogos que você não possui utilizando arquivos .lua e .manifast.
+### ⏻ Reiniciar Steam
+Fecha e reabre a Steam — necessário para que as mudanças apareçam na biblioteca.
 
-Desbloqueie todos os DLCs de jogos que você não possui.
+### ⚙️ Configurações
+Define a pasta da Steam e ajusta o tema da interface.
 
-Carregar automaticamente chaves de descriptografia de depots a partir da .lua e .manifast.
+---
 
-Não faz nenhum tipo de conexão externa, tudo funciona localmente, único momento que se faz necessário ter uma conexão é no momento de download dos jogos.
+## Requisitos
 
-Suporte para download de jogos ou DLCs protegidos que exigem um token de acesso.
+- **Windows 10 ou 11**
+- **Steam instalada**
+- **Git instalado** — necessário para o Método 1, que clona os repositórios de
+  keys. Se você não tem, baixe em <https://git-scm.com/download/win> e vá
+  clicando em *Next* até o fim; não precisa configurar nada.
 
-## Compartilhamento Familiar e Remote Play
-Contorne as restrições do Compartilhamento Familiar da Steam, permitindo que jogos compartilhados sejam jogados sem limitações.
+---
 
-## Como gerar as DLL´s
+## Como usar
+
+1. Baixe o `.exe` mais recente em **[Releases](../../releases/latest)**.
+2. Abra o LuaFast. Na primeira vez, ele mostra os termos de uso.
+3. Se a Steam não for encontrada automaticamente, vá em **Configurações** e
+   aponte a pasta onde ela está instalada.
+4. A tela inicial mostra a sua biblioteca. Use a busca para achar um jogo novo.
+5. Depois de instalar, clique em **Reiniciar Steam** para aplicar.
+
+> O app avisa sozinho quando houver uma versão nova publicada aqui.
+
+---
+
+## Token Hubcap
+
+O Método 2 depende da API do hubcapmanifest.com, que usa token por conta:
+
+1. Acesse <https://hubcapmanifest.com> e crie uma conta.
+2. Gere uma API Key nas configurações do site.
+3. No LuaFast, clique em **Token Hubcap** no menu lateral e cole o token.
+
+O token fica salvo localmente, na pasta `log`.
+
+---
+
+## Compilando as DLLs
+
+O LuaFast **já cria as DLLs automaticamente** dentro da pasta da Steam na
+primeira execução. O que está aqui no repositório é o código-fonte delas, para
+estudo e para quem quiser compilar do zero.
 
 ### Requisitos
-Windows 10/11
-CMake 3.20+
-Visual Studio 2022 com MSVC (2022 17.14.31 x64)
 
-1- Execute build.bat a partir da raiz do projeto para compilar.
+- CMake 3.20+
+- Visual Studio 2022 com MSVC (17.14.31 x64)
 
-2 - Ao termino do processo as dll´s se encontra em \build\Release
+### Compilar
 
-Obs.: Ao usar o LuaFast ele já cria as DLL´s dentro da pasta da Steam! Mas para estudos e conhecimento aqui tem tudo o necessário para ser criado as dlls do zero.
+```
+1. Execute build.bat a partir da raiz do projeto.
+2. Ao final, as DLLs estarão em \build\Release
+```
 
+---
 
+## Perguntas frequentes
 
+**Preciso deixar a Steam fechada?**
+Não para instalar. Mas as mudanças só aparecem na biblioteca depois de
+reiniciar a Steam — o botão **Reiniciar Steam** faz isso.
+
+**O jogo não apareceu na biblioteca.**
+Reinicie a Steam. Se continuar, confira se o caminho configurado em
+**Configurações** é o mesmo da Steam que você abre.
+
+**O Método 1 não encontrou meu jogo.**
+Ele busca em repositórios públicos, que não têm tudo. Tente o Método 2.
+
+**Dá erro ao instalar o Método 1.**
+Confira se o Git está instalado e acessível no PATH.
+
+---
+
+## Apoie o projeto
+
+O LuaFast é **completamente gratuito** e não tem uso comercial. Se ele te ajuda
+e você quiser retribuir:
+
+**Pix:** `appluafast@gmail.com`
+
+Qualquer valor ajuda a manter o projeto funcionando.
+
+---
+
+## Licença
+
+Distribuído sob a **GPL-3.0**. As diretrizes abaixo são complementares à licença
+e, em caso de conflito, prevalecem sobre ela:
+
+- Durante o uso podem ser gerados dados protegidos por direitos autorais. O
+  usuário deve excluí-los em no máximo 24 horas.
+- É proibido usar o projeto para fins comerciais.
+- Modificações só são permitidas com a publicação do código-fonte correspondente
+  e menção aos criadores.
+
+---
+
+## Créditos
+
+- **@blumenal** e **@jeffersonsud** — desenvolvimento
+- [CreamInstaller](https://github.com/pointfeev) por **pointfeev**
